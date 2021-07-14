@@ -1,0 +1,69 @@
+/*      ============== google fonts poppins starts here ==============     */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+/*      ============== google fonts poppins ends here ==============     */
+
+/*      ============== common css styles starts from here ==============     */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/*      ============== common css styles ends here ==============     */
+/*      ============== banner_part section starts from here ==============     */
+#banner_part{
+    background-color: #2D25A0;
+}
+#banner{
+    display: flex;
+    padding: 48px;
+}
+#banner:hover{
+    background: linear-gradient(217deg, rgba(0, 255, 234, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0, 110, 255, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+.banner_half{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_half.banner_image{
+    padding-left: 30px;
+}
+.banner_half h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin:  0 0 15px 0;
+    padding: 0;
+}
+#banner:hover .banner_half h1{
+    text-shadow: 3px 3px 3px #000;
+}
+.banner_half a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_half a:hover{
+    background-image: linear-gradient(to bottom right, navy, hotpink );
+    text-shadow: 1px 1px 1px navy;
+}
+.banner_half .fa-arrow-right{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.banner_half img{
+    width: 100%;
+}
+/*      ============== banner_part section ends here ==============     */
+/*      ============== header starts from here ==============     */
