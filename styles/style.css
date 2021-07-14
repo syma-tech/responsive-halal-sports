@@ -21,7 +21,6 @@ a{
 #banner{
     display: flex;
     padding: 48px;
-    background-image: none;
     transition: background linear .5s;
 }
 #banner:hover{
@@ -113,7 +112,7 @@ a{
 /*      ============== top_players section ends here ==============     */
 /*      ============== Our_course section starts from here ==============     */
 #our_course_part{
-    margin-bottom: 82px;
+    margin-bottom: 152px;
 }
 #our_course_part h2{
     text-align: center;
@@ -174,6 +173,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 #register_details{
     background-color: mintcream;
@@ -264,3 +264,103 @@ button:hover{
     font-weight: 400;
 }
 /*      ============== footer part ends here ==============     */
+
+
+
+/* ========================================== 
+Media Queries starts from here
+==========================================     */
+
+
+/*      ============== Mobile Devices starts here ==============     */
+@media only screen and (max-width: 480px){
+    #banner_part{
+    }
+    #banner{
+        padding: 27px;
+    }
+    .banner_half h1{
+        font-size: 18px;
+    }
+    .banner_half a{
+        font-size: 12px;
+        width: 94px;
+        height: 22px;
+    }
+    .banner_half.banner_image{
+        padding-left: 0;
+    }
+    #best_players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        padding: 0 10px;
+    }
+    #top_players{
+        padding: 30px 40px;
+    }
+    .player_info h3{
+        font-size: 18px;
+        margin-block-start: 10px;
+        margin-block-end: 0;
+    }
+    .player_info 9{
+        font-size: 12px;
+    }
+    #our_course_part{
+        margin-bottom: 80px;
+    }
+    #our_course_part h2 {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+    #our_course{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        width: 64%;
+        margin-bottom: 20px;
+    }
+    .course_details h3, .copy_right p{
+        font-size: 14px;
+    }
+    .course_details p{
+        font-size: 12px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .course_details a {
+        font-size: 12px;
+        padding: 5px 9px;
+        margin-bottom: 12px;
+    }
+    #register_here{
+        flex-direction: column;
+    }
+    #register_details h2, #register_form, #footer_details {
+        padding: 0;
+    }
+    .register_info{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+    .sign_up, button{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footer_logo{
+        padding-top: 30px;
+    }
+    .footer_logo a{
+        width: 65%;
+    }
+    .media_icon a {
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        margin: 10px 13px;
+    }
+}
+/*      ============== Mobile Devices ends here ==============     */
